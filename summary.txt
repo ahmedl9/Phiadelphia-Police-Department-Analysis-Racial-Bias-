@@ -1,0 +1,58 @@
+NETS 150 Homework 5
+
+Name of Project: Investigating Police Incidents to Determine Racial Bias
+
+By:  Ahmed Lone, Richard Li, Varun S Rajagopal
+
+
+Project Description:
+
+https://www.opendataphilly.org/dataset/police-complaints
+
+For our project, we used the Philadelphia police complaint dataset collected  
+from the link above. From the link, we used both the Complaints Against Police 
+CSV and the CAP Findings CSV to obtain our relevant data. The dataset contains 
+a large list of complaints made against police officers in specified districts, 
+the category of abuse, the date received, and a summary that contains the ethnic 
+and gender status of the victim and of the police officers corresponding to the 
+reported offence. Using this data we analyzed racial bias amongst police officers 
+in the Philadelphia area. 
+
+Categories used: 
+
+Graph and graph algorithms (for working 
+with our data); 
+Document Search (aka Information Retrieval by Regular Expressions)
+; 
+Social Networks (for our analysis of homophily and the relationships between nodes and edges). 
+
+
+
+
+Detailed Explanation:
+
+The data was converted into two graphs and an adjacency list for our empirical 
+analysis. We hence analyzed the neighbors of nodes in our two different types 
+of graphs to determine homophily and the prevalence of cross edges. Nodes were 
+categorized by the demographic profile of the complainant filer. In one graph 
+edges were drawn between people of the same district and in another graph edges 
+were drawn between people who suffered the same kind of police abuse. Homophily was then
+calculated to find the tendency of a form of abuse to racially segregate. In order
+to obtain data on ethnicity, document parsing/regular expressions were used
+(as such information, while regularly present in a recurring format,
+is still embedded within a larger description). The construction of the graph,
+traversal, and homophily calculations required graph algorithms and we hence 
+added a graph and node class for our data representation. The CSVParser file 
+gets the requisite data from the sources found in the URL above and contains 
+a main method where a lot of the computation and empirical analysis was done.
+
+Work Breakdown:
+
+Ahmed wrote the classes for the node and graph representation of the data and 
+did all the requisite homophily calculations. Varun created the CSVParser that 
+enabled us to get information from the files that could be represented within 
+the node class and created the different forms of adjacency lists for data 
+processing as required. Richard wrote functionality within the CSVParser class 
+that included regular expressions to read through the data and to identify the 
+demographic information of the person filing the complaint (and put this data 
+into maps from which additional processing was possible).
