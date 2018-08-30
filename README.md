@@ -1,3 +1,7 @@
+Project Description:
+
+https://www.opendataphilly.org/dataset/police-complaints
+
 For our project, we used the Philadelphia police complaint dataset collected  
 from the link above. From the link, we used both the Complaints Against Police 
 CSV and the CAP Findings CSV to obtain our relevant data. The dataset contains 
@@ -10,7 +14,8 @@ in the Philadelphia area.
 Categories used: 
 
 Graph and graph algorithms (for working 
-with our data); 
+with our data)
+
 Document Search (aka Information Retrieval by Regular Expressions)
-; 
+
 Social Networks (for our analysis of homophily and the relationships between nodes and edges). 
